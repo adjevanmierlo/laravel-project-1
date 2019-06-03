@@ -51,7 +51,7 @@
       @yield('content')
     {{-- js link  --}}
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/canvas.js') }}"></script>
 </body>
 
 </html>
