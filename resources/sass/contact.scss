@@ -1,0 +1,207 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+//app scss
+@import 'app.scss';
+
+body {
+    overflow: hidden;
+    font-family: Raleway;
+}
+
+.bg-color-contact {
+    background-color: white;
+}
+
+.nav-link {
+    color: $second-font-color !important;
+}
+
+.nav-link:hover {
+    color: $second-font-color !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.row {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+.info-blok {
+    position: relative;
+    color: $second-font-color;
+    height: 115%;
+    background-color: $bg-color;
+}
+
+
+.text {
+    position: absolute;
+    top: 20%;
+    left: 4.5%;
+}
+
+.info-blok a {
+    color: $second-font-color;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.info-blok a:hover {
+    color: $main-color;
+}
+
+.info-blok p {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.info-blok a {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.info-blok h1 {
+    font-size: 76px;
+    line-height: 80px;
+    ;
+    font-weight: 400;
+}
+
+.info-blok h2 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    padding-top: 5%;
+}
+
+.google-blok {
+    position: relative;
+    padding: 0;
+}
+
+.google-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 940px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.link-en-info {
+    position: absolute;
+    top: 20%;
+    left: 4.5%;
+    z-index: 20;
+}
+
+.link-en-info p {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.link-en-info a {
+    color: $main-font-color;
+    text-decoration: none;
+}
+
+.link-en-info h1 {
+    font-size: 76px;
+    line-height: 80px;
+    font-weight: 400;
+}
+
+.link-en-info h2 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.btn-outline-primary {
+    border-color: $main-color;
+    color: $second-font-color;
+    transition: all ease 0.8s;
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    background-color: transparent;
+    box-shadow: inset 150px 0 0 0 $main-color;
+}
+
+.vlag {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+}
+
+input {
+    border-color: $main-color !important;
+    background-color: transparent !important;
+    color: $second-font-color !important;
+}
+
+textarea {
+    padding-bottom: 15px;
+    border-color: $main-color !important;
+    background-color: transparent !important;
+}
+
+iframe{
+    height: 115%;
+}
+
+@media (max-width: 575.98px) {
+    body{
+        overflow: visible;
+    }
+    .navbar-toggler-icon{
+        font-size: 40px;
+    }
+    .info-blok {
+        position: absolute;
+        top: 115%;
+        height: 135%;
+        padding-bottom: 20px;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+    .footer-text{
+        position: absolute;
+        left: 0;
+        top: 230%;
+        text-align: center;
+        color: $second-font-color;
+        z-index: 200;
+    }
+    .icons{
+       left: 36%;
+       top: 238%;
+    }
+    iframe{
+        height: 135%;
+    }
+}

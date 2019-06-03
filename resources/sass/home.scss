@@ -1,0 +1,103 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+//app scss
+@import 'app.scss';
+
+body {
+    font-family: Raleway;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-color-home {
+    background-color: $bg-color;
+}
+
+.navbar-light {
+    background-color: $bg-color;
+}
+
+.text-block {
+    text-align: center;
+    margin-top: 25%;
+}
+
+.text-block h1 {
+    font-size: 48px;
+    line-height: 1.05em;
+    font-weight: 400;
+    color: $second-font-color;
+}
+
+.text-block p {
+    font-size: 16px;
+    line-height: 1.375em;
+    font-weight: 400;
+    color: $second-font-color;
+}
+
+.container {
+    .col-12 {
+        .btn-outline-primary {
+            border-color: $main-color;
+            color: $second-font-color;
+            transition: all ease 0.8s;
+            background-color: transparent;
+            font-size: 16px;
+            line-height: 1.375em;
+            font-weight: 400;
+        }
+    }
+}
+
+.btn-outline-primary:hover {
+    // background-color: $main-color !important;
+    box-shadow: inset 150px 0 0 0 $main-color;
+
+}
+
+.name {
+    color: $main-color;
+    background-color: $bg-color;
+}
+
+footer p{
+    color: $second-font-color;
+}
+
+//media queries
+@media (max-width: 575.98px) {
+    .text-block h1{
+        line-height: 1.2;
+        }
+    .footer-text{
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        text-align: center;
+    }
+    .icons{
+       left: 36%;
+    }
+    .navbar-toggler-icon{
+        font-size: 40px;;
+    }
+    canvas{
+        display: none;
+    }
+ }
+

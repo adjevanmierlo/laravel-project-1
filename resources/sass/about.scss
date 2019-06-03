@@ -1,0 +1,138 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+//app scss
+@import 'app.scss';
+
+body {
+    font-family: Raleway;
+}
+
+.bg-color-about {
+    background-color: white;
+}
+
+.nav-link {
+    color: $main-font-color !important;
+}
+
+.nav-link:hover {
+    color: $main-font-color !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.rounded-circle{
+    border: solid 8px $second-font-color;
+    width: 20%;
+    height: auto;
+    box-shadow: 0px 0px 15px $bg-color;
+}
+
+.container-fluid {
+    text-align: center;
+padding: 30px;
+    hr {
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    align-content: center;
+}
+
+.container-fluid h1 {
+    font-size: 48px;
+    line-height: 1.05em;
+    font-weight: 400;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    line-height: 1.25em;
+    font-weight: 400;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.375em;
+    font-weight: 400;
+}
+
+.about-service img {
+    padding-top: 15px;
+    width: 128px;
+    height: auto;
+    margin: 10px;
+}
+
+.fab{
+    color: $main-font-color;
+}
+
+.about-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 400;
+    .service-box{
+        padding: 15px;
+    h3{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.25em;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(to right, #4f9f2d , #4c9c2f , #93cd26);
+        border-image-slice: 1;
+    }
+}
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .about-service{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-fluid h1 {
+        font-size: 30px;
+    }
+    .about-text h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    }
+    .about-text p{
+    font-size: 20px;
+    padding-top: 50px !important;
+    }
+    .footer-text{
+        bottom: -1500px;
+    }
+    .icons {
+        color: $main-font-color;
+        position: absolute;
+        bottom: -1550px;
+        padding: 20px;
+        left: 0;
+    }
+}

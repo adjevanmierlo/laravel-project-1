@@ -1,0 +1,95 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+.container-fluid {
+    padding: 30px;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-light {
+    z-index: 100;
+
+    .navbar-toggler {
+        border: none;
+        font-size: 60px;
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+}
+
+.navbar-light {
+    background-color: transparent !important;
+
+    .navbar-nav {
+        .nav-link {
+            font-family: 'Raleway', sans-serif;
+            color: $second-font-color;
+            font-size: 30px;
+        }
+    }
+}
+
+.nav-link:hover {
+    color: $second-font-color !important;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    right: 0;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #4f9f2d , #4c9c2f , #93cd26);
+    border-image-slice: 1;
+    transition: width 0.5s ease 0s, right 0.5s ease 0s;
+    width: 0;
+}
+
+.footer-text{
+    padding: 20px;
+    color: $main-font-color;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.fab{
+    font-size: 32px;
+    color: $second-font-color
+}
+
+.fab:hover{
+    color: $main-color;
+}
+
+.icons{
+    color: $main-font-color;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.footer-text p{
+    margin: 0;
+}
+
